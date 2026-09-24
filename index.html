@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omari's Hub: a personal portfolio for coding, finance, data, and music projects.">
+    <title>Omari's Hub | Building. Learning. Creating.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Omari's Hub home"><span class="brand-mark">OH</span><span>Omari's Hub</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+            <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+            <button class="theme-toggle" type="button" aria-label="Switch to light mode"><span class="theme-icon">o</span><span class="theme-label">Light mode</span></button>
+        </nav>
+    </header>
+    <!-- Main portfolio sections: update the text here as your projects grow. -->
+    <main id="top">
+        <section class="hero section-shell">
+            <div class="hero-copy reveal"><p class="eyebrow"><span class="status-dot"></span> Learning in public</p><h1>Building.<br><em>Learning.</em><br>Creating.</h1><p class="hero-intro">I'm learning to code and building real projects while exploring technology, finance, data, and music.</p><div class="hero-actions"><a class="button button-primary" href="#projects">View my projects <span aria-hidden="true">-></span></a><a class="button button-quiet" href="#contact">Contact me <span aria-hidden="true">-></span></a></div></div>
+            <div class="hero-aside reveal reveal-delay"><div class="orbit orbit-large"><span class="orbit-label">Curiosity<br>in motion</span></div><div class="orbit orbit-small"><span>01</span></div><p class="hero-note">A growing collection of things I'm exploring, making, and figuring out.</p></div>
+        </section>
+        <div class="ticker" aria-label="Current interests"><div class="ticker-track"><span>Web development</span><i>+</i><span>Finance &amp; data</span><i>+</i><span>Music &amp; DJing</span><i>+</i><span>Continuous learning</span><i>+</i><span>Web development</span><i>+</i><span>Finance &amp; data</span><i>+</i></div></div>
+        <section id="about" class="content-section section-shell"><div class="section-heading reveal"><p class="eyebrow">01 / About</p><h2>Still learning.<br><em>Already building.</em></h2></div><div class="about-content reveal reveal-delay"><p class="large-copy">I'm developing my skills by turning curiosity into projects. This is where I keep track of the things I make across web development, finance, data, and music.</p><p class="muted-copy">There is no finished version of the journey. Just useful experiments, new ideas, and the next thing to learn.</p><div class="about-tags"><span>Web development</span><span>JavaScript</span><span>Data &amp; spreadsheets</span><span>Finance</span><span>Technology</span><span>Music production &amp; DJing</span></div></div></section>
+        <section id="projects" class="content-section section-shell projects-section"><div class="section-heading section-heading-row reveal"><div><p class="eyebrow">02 / Selected work</p><h2>Things I'm<br><em>working on.</em></h2></div><p class="section-aside">Projects will grow here as I keep learning and building.</p></div><div id="project-grid" class="project-grid"></div></section>
+        <section id="skills" class="content-section section-shell skills-section"><div class="section-heading reveal"><p class="eyebrow">03 / Skills in progress</p><h2>Tools I use<br><em>to make things.</em></h2></div><div class="skills-grid reveal reveal-delay"><div class="skill-item"><span class="skill-number">01</span><h3>HTML</h3><p>Structuring thoughtful web pages.</p></div><div class="skill-item"><span class="skill-number">02</span><h3>CSS</h3><p>Bringing ideas to life visually.</p></div><div class="skill-item"><span class="skill-number">03</span><h3>JavaScript</h3><p>Adding useful interactions.</p></div><div class="skill-item"><span class="skill-number">04</span><h3>GitHub</h3><p>Learning to manage projects.</p></div><div class="skill-item"><span class="skill-number">05</span><h3>Spreadsheets</h3><p>Organizing and exploring data.</p></div><div class="skill-item"><span class="skill-number">06</span><h3>Data Analysis</h3><p>Finding meaning in information.</p></div><div class="skill-item"><span class="skill-number">07</span><h3>Finance</h3><p>Building practical knowledge.</p></div><div class="skill-item"><span class="skill-number">08</span><h3>Music Production</h3><p>Making sound and ideas connect.</p></div></div></section>
+        <section id="contact" class="contact-section"><div class="section-shell contact-grid"><div class="contact-copy reveal"><p class="eyebrow">04 / Contact</p><h2>Have an idea?<br><em>Let's talk.</em></h2><p>I'm always open to hearing about interesting projects, ideas, or things worth learning together.</p></div><form id="contact-form" class="contact-form reveal reveal-delay" novalidate><label for="name">Name<input id="name" name="name" type="text" autocomplete="name" required></label><label for="email">Email<input id="email" name="email" type="email" autocomplete="email" required></label><label for="message">Message<textarea id="message" name="message" rows="5" required></textarea></label><button class="button button-primary" type="submit">Send message <span aria-hidden="true">-></span></button><p id="form-status" class="form-status" role="status" aria-live="polite"></p></form></div></section>
+    </main>
+    <footer class="site-footer section-shell"><a class="brand" href="#top"><span class="brand-mark">OH</span><span>Omari's Hub</span></a><p>Building a little more every day.</p><button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">^</button></footer>
+</body>
+</html>
